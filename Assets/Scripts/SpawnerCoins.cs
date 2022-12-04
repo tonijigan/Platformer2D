@@ -7,7 +7,7 @@ public class SpawnerCoins : MonoBehaviour
 
     private Transform[] _points;
 
-    void Start()
+    private void Start()
     {
         _points = new Transform[_setPoint.childCount];
 

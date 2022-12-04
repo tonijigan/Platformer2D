@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private const string Run = "Run";
+
     [SerializeField] private Rigidbody2D _rigidbody2D;
     [SerializeField] private Animator _animator;
     [SerializeField] private float _speed;
@@ -9,8 +11,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private LayerMask _ground;
     [SerializeField] private float _radius;
-
-    private const string Run = "Run";
 
     private void Update()
     {
